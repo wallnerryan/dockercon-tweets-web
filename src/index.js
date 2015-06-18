@@ -13,7 +13,7 @@ app.engine('ntl', function (filePath, options, callback) { // define the templat
   fs.readFile(filePath, function (err, content) {
     if (err) return callback(new Error(err));
     // this is an extremely simple template engine
-    var rendered = content.toString().replace('#tweet#', '<style type="text/css"> body { background-color: #f3f3f3; }</style><div id="twt" style="display: inline-block; position: fixed; top: 0; bottom: 0; left: 0; right: 0; width: 400px; height: 200px; margin: auto; font-size:22pt; font-weight:bold; font-family: Arial, Helvetica, sans-serif; background-color: #f3f3f3;"><p>'+ options.tweet +'</p></div>');
+    var rendered = content.toString().replace('#tweet#', '<style type="text/css"> body { background-color: #f3f3f3; }</style><div id="twt" style="display: inline-block; position: fixed; top: 0; bottom: 0; left: 0; right: 0; width: 500px; height: 200px; margin: auto; font-size:22pt; font-weight:bold; font-family: Helvetica Neue, sans-serif; letter-spacing: -1px; line-height: 1; background-color: #f3f3f3;"><p>'+ options.tweet +'</p></div>');
     return callback(null, rendered);
   })
 });

@@ -23,7 +23,7 @@ app.set('view engine', 'ntl'); // register the template engine
 app.get('/', function (req, res) {
     console.log('Contacting MongoDB');
     // Connect to the db
-    MongoClient.connect("mongodb://"+process.env.MONGOSERVER+":27017/test", function(err, db) {
+    MongoClient.connect("mongodb://"+process.env.MONGODB_SERVICE_SERVICE_HOST+":27017/test", function(err, db) {
       if(!err) {
         console.log("We are connected to MongoDB");
         db.collection('records', function(err, collection) {

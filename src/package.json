@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "description": "Node.js Twitter Web Front End Service on CentOS using docker",
-  "author": "Ryan Wallner <ryan.wallner@emc.com>",
+  "author": "Ryan Wallner <ryan.wallner@clusterhq.com>",
   "dependencies": {
     "express": "3.2.4",
     "mongodb": "1.4.9"
